@@ -1,0 +1,215 @@
+
+/*------------------------------------------Clasic-----------------------------------------*/
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(13,13,27);
+	padding: 0%;
+	margin: 0%;
+	height: 100%;
+    border: 1px solid orange;
+}
+
+/*------------------------------------------Id------------------------------------------*/
+#board
+{   
+	display:block;
+	top: 10%;
+	left: 20%;
+}
+
+/************ Nav **************/
+#Nav
+{
+	font-size: 16px;
+	border-left:2px solid rgb(238,118,0);
+	box-shadow: 3px 3px 3px rgb(16,12,8);
+	position: fixed;
+	padding: 10px;
+    padding-left: 0px;
+	min-height:100%;
+	height: 100%;
+	text-align: center;
+	background: linear-gradient( 35deg, rgba(227,119,10,0.9), rgba(245,200,145,0.9));
+}
+/*
+#Nav:hover
+{
+	padding: 15px;
+    padding-left: 0px;
+}*/
+
+#Nav li
+{
+	background-color: radial-gradient(circle, rgba(227,119,10,0.9) 67%, rgba(78,57,97,0.9) 99%, rgba(245,200,145,0.9) 100%, rgba(245,245,245,0.9), 100%);
+	border-radius: 5px;
+	list-style-type: none;
+	text-align: center;
+}
+
+#Nav li ul
+{
+	text-align: center;
+	list-style-type: square;
+    margin-bottom: 40px;
+	background-color:linear-gradient( 35deg, rgba(227,119,10,0.9), rgba(245,200,145,0.9));
+}
+
+#Nav li ul:hover
+{
+	list-style-type: square;
+	color:rgb(238,118,0);
+}
+
+#ia:hover,#vs:hover,#time:hover,#start:hover
+{
+	background-color: rgb(255,255,255,0.5);
+}
+
+/************ Parameters **************/
+#parameterTime, #parameterVS
+{   display: none;
+    position:fixed;
+    top: 50%;
+    left: 65%;
+    background:linear-gradient( 35deg, rgba(227,119,10,0.9), rgba(245,200,145,0.9));
+    padding: 0.6%;
+    border-radius: 5px;
+    border:1px inset black;
+} 
+#parameterTime:hover, #parameterVS:hover
+{
+    padding: 0.8%;
+}
+
+#nameOne,#nameTwo ,#chrono ,#score ,#scoreOne, #scoreTwo, #difficulty
+{
+    border-radius: 10px;
+    font-size: 20px;
+	text-align: center;
+    border: 1px inset black;
+	padding: 1.1%;
+	margin: 1.1%;
+	background-color: white;
+}
+
+#scoreOne{
+	border-color: blue;
+	background-color: black;
+}
+
+#scoreTwo{
+	border-color: red;
+	background-color: black;
+}
+
+#parameterName
+{
+	position:fixed;
+	left:40%;
+	top:40%;
+	background-color: white;
+	border: 3px solid orange;
+	padding: 1%;
+	margin: 1px;
+	border-radius: 10%;
+}
+
+#wallRigth
+{
+    background:linear-gradient( 35deg, rgba(227,119,10,0.9), rgba(245,200,145,0.9));
+    padding: 1px;
+    position: fixed;
+    left: 99.9%;
+	border-left:2px solid rgb(238,118,0);
+	box-shadow: 3px 3px 3px rgb(16,12,8);
+	min-height:100%;
+}
+
+/*------------------------------------------Class------------------------------------------*/
+/************ Board**************/
+
+
+.line
+{
+	display: absolute;
+}
+
+.card img
+{
+	margin: 4px;
+	border: 3px inset ;
+	border-color: orange;
+	border-radius: 10%;
+	padding: 5px;
+	height : 100px;
+	width : 100px;
+	background-color: white;
+}
+
+.card img:hover
+{
+	height : 104px;
+	width : 104px;
+	margin : 0px;
+	border-color: orange;
+	border-width: 4px;
+	margin-left: 1px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-style: double;
+}
+.card
+{
+	display: inline;
+	margin: 5px;
+	height: 104px;
+	width: 104px;
+}
+
+.card:hover
+{
+	background-color: rgba(0,0,0,0);
+}
+
+/************ Nav **************/
+.actif
+{
+	background-color: rgba(227,119,10,0.4);
+	border-radius: 10px;
+	border: 1px inset black;
+	font-size: 14px;
+}
+
+.inactif
+{	
+	background-color: white;
+	border-radius: 10px;
+	border: 1px inset black;
+	width: 90px;
+	height: 90px;
+	font-size: 14px;
+	padding: 1px;
+}
+
+.inactif:hover, .actif:hover{
+	width: 85px;
+	height: 85px;
+	border-width: 5px;
+	padding: 0px;;
+}
+
+.img
+{	
+	width: 78px;
+	height: 78px;
+}
+.img:hover{
+	width: 76px;
+	height: 76px;
+}
+
+
+.board
+{
+	position: fixed;
+}

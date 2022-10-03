@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Memory</title>
+		<meta charset="utf-8">
+		<link href="index.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="pictures/3.png" />
+    </head>
+	<body>
+		<div id="Nav">
+			<li id="Option">
+				<ul>
+					<button id="vs" class="inactif" onclick="setGameMode(0)"><img class ="img" src = "pictures/Interface/_Vs.png"></button>
+				</ul>
+				<ul>
+					<button id="time" class="actif" onclick="setGameMode(1)"><img class ="img" src = "pictures/Interface/_Time.png"></button>
+				</ul>
+				<ul>
+					<button id="ia" class="inactif" onclick="setGameMode(2)"><img class ="img" src = "pictures/Interface/_IA.png"></button>
+				</ul>
+				<hr><br>
+				<ul>
+					<div id ="features">
+						<button id="start" class = "inactif" onclick="startGame()"><img class= "img" src = "pictures/Interface/_Start.png"></button>
+					</div>
+				</ul>
+				<ul>
+					<button id="reset" class = "inactif" onclick="resetBoard()"><img class="img" src="pictures/Interface/reset.png"></button>
+				</ul>
+			</li>
+		</div>
+		<div id ="board" class="board"></div>
+		
+		<div id ="parameterName">
+			<center>
+				<input id=nameOne type="text" value="" maxlength="12">
+				<input id=nameTwo type="text" value="" maxlength="12">
+				<div id ="difficulty">
+					<label style="text-decoration: underline;padding: 0.9%;">Levels </label><br>
+					<label>Easy</label>
+					<input type="radio" id="easy" value="easy" name="choice" onclick="changeDifficulty()"><br>
+					<label>Medium</label>
+					<input type="radio" id="medium" value="medium" name="choice" checked="checked" onclick="changeDifficulty()"><br>
+					<label>Hard</label>
+					<input type="radio" id="hard" value="hard" name="choice"  onclick="changeDifficulty()"><br>
+				</div>
+				</section>
+			</center>	
+		</div>
+        <div id ="parameterTime">
+            <center>
+				<label>Time </label>
+				<p id="chrono">00:00</p>
+				<p id="score" value ="0">score : 0</p>
+			</center>
+        </div>
+
+		<div id ="parameterVS">
+			<center>
+				<p id="scoreOne" value ="0">playerOne : 0</p>
+				<p id="scoreTwo" value ="0">playerTwo : 0</p>
+			</center>
+		</div>
+
+        <div id="wallRigth"></div>
+        <script src="index.js"></script>
+	</body>
+</html>
+
